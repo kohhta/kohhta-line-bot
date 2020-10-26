@@ -21,16 +21,20 @@ class LinebotController < ApplicationController
 
     events = client.parse_events_from(body)
 
+    # evnets内のtypeを識別していく。
     events.each { |event|
       case event
       when Line::Bot::Event::Message
         case event.type
+          # 今回はメッセージに対応する処理を行うため、type: "text"の場合処理をする。
+          # 例えば位置情報に対応する処理を行うためには、MessageType::Locationとなる。
         when Line::Bot::Event::MessageType::Text
           message = {
             type: 'text',
-            text: event.message['text']
+            text: event.message['text']  #送られた内容をそのまま返す
           }
-          client.reply_message(event['replyToken'], message)
+          client.reply_message(event['replyToken'], message) # 応答メッセージを送る
+
         end
       end
     }
