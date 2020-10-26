@@ -11,20 +11,20 @@ Linebot、Rails+Herokuになります。
 
 
 # 目標
-自作LINE bot公開
-環境構築ゼロから
-基本的な用語の説明も簡単に把握
-外部APIを使ってみることでスキルアップのため学習
-調べて実装できるまで挑戦
+- 自作LINE bot公開
+- 環境構築ゼロから
+- 基本的な用語の説明も簡単に把握
+- 外部APIを使ってみることでスキルアップのため学習
+- 調べて実装できるまで挑戦
 
 # 手段
-Ruby on rails
-LINE developers
-heroku：クラウドプラットフォーム
-Mac
+- Ruby on rails
+- LINE developers
+- heroku：クラウドプラットフォーム
+- Mac
 
 # 作った人のステータス
-Ruby,rails 学習は２０２０年８月からスタート
+- Ruby,rails 学習は２０２０年８月からスタート
 
 
 
